@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="493F2DFD-88F4-5592-9FF9-13688C17AED2" containerWithKeyObject="3ED70623-AA82-C6D2-083C-198A76EDE2A1" localFKIndex="2110579E-0993-27C6-E0B6-12033BE35BF9" name="Users_PrivilegeType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:11:51 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<referredTableLongName>PrivilegeType</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AA82CC7B-561A-6923-F3A4-95C3177C7E1F</referredTableID>
+<keyObject>80B5CEC0-44A2-45F3-A471-60F67063FB84</keyObject>
+<referredKeyID>80B5CEC0-44A2-45F3-A471-60F67063FB84</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Privilege_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

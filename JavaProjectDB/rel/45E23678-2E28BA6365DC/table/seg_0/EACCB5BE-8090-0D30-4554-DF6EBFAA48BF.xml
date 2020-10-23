@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EACCB5BE-8090-0D30-4554-DF6EBFAA48BF" name="Grape">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:48:48 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GrapeQuantity" id="6A748FCD-9373-98D2-DBBE-1419D9003A89">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:49:39 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GrapeType_ID" id="C0FBEDFE-5A6D-958F-A131-578750D2C436">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:49:39 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EF56C896-C170-BDAB-047E-9A4116F9DEE2" referredColumn="4875EB99-45C1-DF2D-8960-5FDCFC3DECE4"/>
+</associations>
+</Column>
+<Column name="Grape_ID" id="A8A64937-3240-191D-AD9B-2C3BF9B871C5">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:01 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E071D5F-6EA0-6045-FDE2-23B55F0FDB77" name="Grape_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:01 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8A64937-3240-191D-AD9B-2C3BF9B871C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EC47DE7-4CFC-0474-4BAC-C489BA0DAF5F" name="Grape_GrapeType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:59:32 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C0FBEDFE-5A6D-958F-A131-578750D2C436"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

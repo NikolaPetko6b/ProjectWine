@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEA1DF1A-2EC9-6377-4695-E0E526716D1E" name="Bottles">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:53:07 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="BottleQuantity" id="209B9AEC-812A-6B4E-BCBA-D4126938BEDF">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:54:17 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BottleType_ID" id="EBCAB2ED-C782-5F44-4218-6864A11984E1">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:54:17 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DB0F66B1-7CAD-10CF-BD49-DFBF4B886AD0" referredColumn="899E28ED-2C8A-97DC-BFC7-DF94DC18A995"/>
+</associations>
+</Column>
+<Column name="Bottles_ID" id="F487ADB0-4394-EB1D-4A78-609454D844CF">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:07:30 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD06BF2D-42BF-384F-301A-3AC22470717D" name="Bottles_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:15:21 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F487ADB0-4394-EB1D-4A78-609454D844CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28B3C764-5F38-21BD-027A-50F0E7093044" name="Bottles_BottleType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:59:18 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBCAB2ED-C782-5F44-4218-6864A11984E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

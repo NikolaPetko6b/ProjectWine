@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="289.0" prefWidth="330.0" style="-fx-background-color: #00BFFF;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WinemakerRegistration">
+   <children>
+      <Label layoutX="30.0" layoutY="36.0" text="Username:" />
+      <Label layoutX="32.0" layoutY="69.0" text="Password:" />
+      <Label layoutX="30.0" layoutY="108.0" text="WineType:" />
+      <Label layoutX="29.0" layoutY="144.0" text="White grape needed:" />
+      <Label layoutX="29.0" layoutY="181.0" text="Red grape needed:" />
+      <Label layoutX="258.0" layoutY="144.0" text="kg." />
+      <Label layoutX="258.0" layoutY="181.0" text="kg." />
+      <TextField layoutX="101.0" layoutY="32.0" />
+      <TextField layoutX="101.0" layoutY="65.0" />
+      <TextField layoutX="101.0" layoutY="104.0" />
+      <TextField layoutX="151.0" layoutY="140.0" prefHeight="26.0" prefWidth="101.0" />
+      <TextField layoutX="151.0" layoutY="177.0" prefHeight="26.0" prefWidth="101.0" />
+      <Button layoutX="105.0" layoutY="233.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="140.0" text="Create Winemaker" />
+   </children>
+</AnchorPane>

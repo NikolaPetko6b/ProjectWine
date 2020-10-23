@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70998905-51AF-451D-DB4B-C15D1B825F4C" name="Warehouse">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:06:40 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_19</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="User_ID" id="402D6328-B384-B0D9-4795-E8563319DDB1">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:33 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8DAFCE3F-ED15-F72D-CA85-947CC138769A" referredColumn="12BC71E5-FC04-F1B4-B980-928C4A5BC203"/>
+</associations>
+</Column>
+<Column name="Botlles_ID" id="D690DE4E-FA47-EB85-B323-6A13E8B97446">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:33 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="09D7FF08-CA88-4A7C-B5A6-93E3947D8444" referredColumn="F487ADB0-4394-EB1D-4A78-609454D844CF"/>
+</associations>
+</Column>
+<Column name="Grape_ID" id="33FCC9C4-7607-0FCD-465F-94CEE2ACA965">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:33 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3A635760-1905-4A4B-31E4-F81CC59EEB8B" referredColumn="A8A64937-3240-191D-AD9B-2C3BF9B871C5"/>
+</associations>
+</Column>
+<Column name="Wine_ID" id="B3859ED4-65D7-724C-7B05-C5A9E2FCA336">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:33 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C66E8E58-DB8B-23CD-F32E-06AC18BADAD6" referredColumn="4FCA0C0F-4887-15E5-462B-8BBF86049C5A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52FAE12B-A77D-28EE-A628-11C3478C3661" name="Warehouse_Grape_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:14:53 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33FCC9C4-7607-0FCD-465F-94CEE2ACA965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E01B6899-3126-1228-80C3-8C365DE92006" name="Warehouse_Wine_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:15:02 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3859ED4-65D7-724C-7B05-C5A9E2FCA336"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71EFC9EF-4C86-19EE-7FBF-7FD7CEE1F6E6" name="Warehouse_Bottles_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:15:25 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D690DE4E-FA47-EB85-B323-6A13E8B97446"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D933B94-E156-23C4-2757-48BFF709E6A3" name="Warehouse_Users_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:15:53 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="402D6328-B384-B0D9-4795-E8563319DDB1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

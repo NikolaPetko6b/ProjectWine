@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="734D587B-8BF3-AA42-CD56-ECDBB2F9FEC5" name="Wine">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:57:56 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="WineQuantity" id="EE55C095-3820-A521-F79E-11C09A3EAA3B">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:00:32 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WineType_ID" id="DA47F380-6DEA-8726-5817-84F39E6E2FC4">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:58:22 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5FC9ED7-0303-FB3E-4C23-152D0DC09F50" referredColumn="2C3268CC-0880-8266-974A-CD971F947ABF"/>
+</associations>
+</Column>
+<Column name="Wine_ID" id="4FCA0C0F-4887-15E5-462B-8BBF86049C5A">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:02:01 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="969926F5-491F-F676-2B1B-D49F7988C56B" name="Wine_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:02:21 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FCA0C0F-4887-15E5-462B-8BBF86049C5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="042EE624-472D-8139-BC21-CAA5284C3830" name="Wine_WineType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:59:03 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA47F380-6DEA-8726-5817-84F39E6E2FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

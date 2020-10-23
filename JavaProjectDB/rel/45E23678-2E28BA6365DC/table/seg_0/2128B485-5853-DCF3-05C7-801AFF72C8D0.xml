@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2128B485-5853-DCF3-05C7-801AFF72C8D0" name="BottleType">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:54:51 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Size" id="8A851830-F666-0B4E-B932-4C91A897D901">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:55:31 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BottleType_ID" id="899E28ED-2C8A-97DC-BFC7-DF94DC18A995">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:55:31 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A37B0ADD-0EB0-EDCF-14BD-2B651A63C6EC" name="BottleType_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:55:31 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="899E28ED-2C8A-97DC-BFC7-DF94DC18A995"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

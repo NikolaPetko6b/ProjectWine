@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C4FDB936-798C-90BD-D3E7-893AB1A8AC0A" name="GrapeType">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:51:08 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Type" id="B6785020-F1DA-983C-BF76-0AC8FC7EA8FA">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:52:04 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GrapeType_ID" id="4875EB99-45C1-DF2D-8960-5FDCFC3DECE4">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:52:04 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96E7B91E-81C7-DDAB-0943-0E69887F0855" name="GrapeType_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:55:51 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4875EB99-45C1-DF2D-8960-5FDCFC3DECE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

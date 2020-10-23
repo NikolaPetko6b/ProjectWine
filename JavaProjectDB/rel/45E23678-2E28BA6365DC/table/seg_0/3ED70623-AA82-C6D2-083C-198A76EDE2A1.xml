@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3ED70623-AA82-C6D2-083C-198A76EDE2A1" name="Users">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:03 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<ordsAlias>table_22</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Username" id="BE092E0B-E05C-8C78-EE02-D5124C18074E">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:59 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Password" id="1A322D7E-9584-0E3A-BBB9-9DC15E4DD57F">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:59 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Privilege_ID" id="D230C32F-3D24-13A0-E86A-1801A662D9C0">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:59 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="493F2DFD-88F4-5592-9FF9-13688C17AED2" referredColumn="51F3D3FE-EFE9-DB2A-DCCE-CE0B028CBD53"/>
+</associations>
+</Column>
+<Column name="User_ID" id="12BC71E5-FC04-F1B4-B980-928C4A5BC203">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:59 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D8600DA-F154-9C4F-52C6-4B17CD76246C" name="Users_PK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:10:59 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12BC71E5-FC04-F1B4-B980-928C4A5BC203"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2110579E-0993-27C6-E0B6-12033BE35BF9" name="Users_PrivilegeType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 12:11:51 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D230C32F-3D24-13A0-E86A-1801A662D9C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

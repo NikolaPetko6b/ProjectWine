@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="JavaProjectDB" id="38034E57-4F28-A663-EBFD-BFD807EAC25D" version="3.5">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-06 18:45:30 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>38034E57-4F28-A663-EBFD-BFD807EAC25D</designId>
+</OSDM_Design>

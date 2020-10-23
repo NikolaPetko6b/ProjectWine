@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A5FC9ED7-0303-FB3E-4C23-152D0DC09F50" containerWithKeyObject="734D587B-8BF3-AA42-CD56-ECDBB2F9FEC5" localFKIndex="042EE624-472D-8139-BC21-CAA5284C3830" name="Wine_WineType_FK">
+<createdBy>Petko</createdBy>
+<createdTime>2020-10-08 11:59:03 UTC</createdTime>
+<ownerDesignName>JavaProjectDB</ownerDesignName>
+<referredTableLongName>WineType</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>05655D5E-947F-0672-CEF8-A84C652DF307</referredTableID>
+<keyObject>38078FD9-7031-40D1-2939-9B249A874328</keyObject>
+<referredKeyID>38078FD9-7031-40D1-2939-9B249A874328</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>WineType_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
