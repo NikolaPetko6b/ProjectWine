@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+    <children>
+        <BorderPane prefHeight="500.0" prefWidth="350.0">
+            <right>
+                <AnchorPane prefHeight="200.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <PasswordField fx:id="passwordField" layoutX="101.0" layoutY="250.0" promptText="Password" style="-fx-background-color: transperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBlue;" />
+                        <TextField fx:id="usernameField" layoutX="101.0" layoutY="178.0" promptText="Username" style="-fx-background-color: transperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBLue;" />
+                        <Button layoutX="101.0" layoutY="329.0" mnemonicParsing="false" onAction="#LoginValidation" prefHeight="26.0" prefWidth="87.0" style="-fx-border-color: SlateBlue; -fx-background-color: SlateBlue;" text="Login" textFill="WHITE" />
+                        <Button layoutX="200.0" layoutY="329.0" mnemonicParsing="false" style="-fx-background-color: SlateBlue; -fx-border-color: SlateBLue;" text="Cancel" textFill="WHITE" />
+                        <Text fill="#2e00d482" layoutX="69.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wine Company Login" wrappingWidth="192.75390625">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                        <ComboBox layoutX="96.0" layoutY="90.0" prefHeight="26.0" prefWidth="158.0" promptText="You are?" style="-fx-background-color: SlateBlue;" visibleRowCount="3" />
+                  <Label fx:id="label" layoutX="101.0" layoutY="296.0" text="Label" />
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
