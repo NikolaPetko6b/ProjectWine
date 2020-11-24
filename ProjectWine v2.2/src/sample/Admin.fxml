@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" style="-fx-border-color: SlateBLue;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <Label layoutX="120.0" layoutY="23.0" text="Hello Admin!">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="94.0" layoutY="181.0" mnemonicParsing="false" onAction="#SwitchHostReg" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="Create new Host" textFill="WHITE" />
+      <Button layoutX="94.0" layoutY="223.0" mnemonicParsing="false" onAction="#SwitchWinemakerReg" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="Create new Winemaker" textFill="WHITE" />
+      <Button layoutX="94.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="Stock Info" textFill="WHITE" />
+      <Button layoutX="94.0" layoutY="377.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="180.0" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="See / Edit Winemaker" textFill="WHITE" />
+      <Label layoutX="14.0" layoutY="146.0" text="Register new User's">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="297.0" text="Options:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="HostDelete" layoutX="286.0" layoutY="182.0" mnemonicParsing="false" onAction="#SwitchHostDel" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="Delete" textFill="WHITE" />
+      <Button fx:id="WinemakerDelete1" layoutX="286.0" layoutY="223.0" mnemonicParsing="false" onAction="#SwitchWinemakerDel" style="-fx-background-color: SlateBLue; -fx-border-color: SlateBLue;" text="Delete" textFill="WHITE" />
+   </children>
+</AnchorPane>

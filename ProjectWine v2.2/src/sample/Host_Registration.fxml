@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="151.0" prefWidth="313.0" style="-fx-background-color: thransperant;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HostRegistration">
+   <children>
+      <Label layoutX="23.0" layoutY="20.0" text="Username:" />
+      <Label layoutX="25.0" layoutY="67.0" text="Password:" />
+      <TextField fx:id="NewHostUser" layoutX="96.0" layoutY="16.0" style="-fx-background-color: thransperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBlue;" />
+      <TextField fx:id="NewHostPass" layoutX="96.0" layoutY="63.0" style="-fx-background-color: thransperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBlue;" />
+      <Button layoutX="107.0" layoutY="117.0" mnemonicParsing="false" onAction="#AddHostOnAction" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: SlateBlue;" text="Create Host" textFill="WHITE" />
+      <Label fx:id="HostRegLabel" layoutX="82.0" layoutY="99.0" text="Label" />
+   </children>
+</AnchorPane>

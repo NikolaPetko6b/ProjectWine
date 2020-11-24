@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SampleController">
+    <children>
+        <BorderPane prefHeight="500.0" prefWidth="350.0" GridPane.columnIndex="1">
+            <right>
+                <AnchorPane prefHeight="500.0" prefWidth="325.0" style="-fx-background-color: thransperant;" BorderPane.alignment="CENTER">
+                    <children>
+                        <PasswordField fx:id="passwordField" layoutX="78.0" layoutY="250.0" prefHeight="27.0" prefWidth="150.0" promptText="Password" style="-fx-background-color: transperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBlue;" />
+                        <TextField fx:id="usernameField" layoutX="78.0" layoutY="178.0" prefHeight="27.0" prefWidth="150.0" promptText="Username" style="-fx-background-color: transperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBLue;" />
+                        <Button layoutX="78.0" layoutY="330.0" mnemonicParsing="false" onAction="#LoginValidation" prefHeight="27.0" prefWidth="150.0" style="-fx-border-color: SlateBlue; -fx-background-color: SlateBlue;" text="Login" textFill="WHITE" />
+                  <Text fill="SLATEBLUE" layoutX="117.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" wrappingWidth="71.61016845703125">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="52.0" fitWidth="49.0" layoutX="270.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../wine-glass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="30.0" layoutX="29.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../key-131964784882661989.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="33.0" fitWidth="27.0" layoutX="31.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../0c3b3adb1a7530892e55ef36d3be6cb8.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="44.0" layoutY="301.0" text="Label" />
+                    </children>
+                </AnchorPane>
+            </right>
+        </BorderPane>
+      <BorderPane prefHeight="500.0" prefWidth="238.0" style="-fx-background-color: SlateBlue;">
+         <center>
+            <AnchorPane prefHeight="502.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+               <children>
+                        <Text fill="WHITE" layoutX="63.0" layoutY="51.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Wine Company " wrappingWidth="140.75396728515625">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Text>
+                  <ImageView fitHeight="303.0" fitWidth="220.0" layoutX="26.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../wine.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+    </children>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="272.0000366210937" minWidth="244.00003662109376" prefWidth="266.4" />
+      <ColumnConstraints maxWidth="344.7999633789062" minWidth="318.39996337890625" prefWidth="324.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+</GridPane>
