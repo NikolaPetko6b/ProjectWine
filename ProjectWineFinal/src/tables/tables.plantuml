@@ -1,0 +1,250 @@
+@startuml
+
+title __TABLES's Class Diagram__\n
+
+  namespace tables {
+    class tables.BottlesEntity {
+        - bottlequantity : Integer
+        - bottlesId : int
+        - bottletypeId : int
+        - dateoforderB : Date
+        - warehouseId : Integer
+        + equals()
+        + getBottlequantity()
+        + getBottlesId()
+        + getBottletypeId()
+        + getDateoforderB()
+        + getWarehouseId()
+        + hashCode()
+        + setBottlequantity()
+        + setBottlesId()
+        + setBottletypeId()
+        + setDateoforderB()
+        + setWarehouseId()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.BottletypeEntity {
+        - bottletypeId : int
+        - sizeB : String
+        + equals()
+        + getBottletypeId()
+        + getSizeB()
+        + hashCode()
+        + setBottletypeId()
+        + setSizeB()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.CurrentStockEntity {
+        - bottles187 : Integer
+        - bottles200 : Integer
+        - bottles375 : Integer
+        - bottles750 : Integer
+        - curDate : Date
+        - currentstockid : int
+        - redGrape : Double
+        - warehouseId : Integer
+        - whiteGrape : Double
+        + equals()
+        + getBottles187()
+        + getBottles200()
+        + getBottles375()
+        + getBottles750()
+        + getCurDate()
+        + getCurrentstockid()
+        + getRedGrape()
+        + getWarehouseId()
+        + getWhiteGrape()
+        + hashCode()
+        + setBottles187()
+        + setBottles200()
+        + setBottles375()
+        + setBottles750()
+        + setCurDate()
+        + setCurrentstockid()
+        + setRedGrape()
+        + setWarehouseId()
+        + setWhiteGrape()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.GrapeEntity {
+        - dateoforder : Date
+        - grapeId : int
+        - grapequantity : Double
+        - grapetypeId : int
+        - warehouseId : Integer
+        + equals()
+        + getDateoforder()
+        + getGrapeId()
+        + getGrapequantity()
+        + getGrapetypeId()
+        + getWarehouseId()
+        + hashCode()
+        + setDateoforder()
+        + setGrapeId()
+        + setGrapequantity()
+        + setGrapetypeId()
+        + setWarehouseId()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.GrapetypeEntity {
+        - grapetypeId : int
+        - type : String
+        + equals()
+        + getGrapetypeId()
+        + getType()
+        + hashCode()
+        + setGrapetypeId()
+        + setType()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.NotificationsEntity {
+        + status : String
+        - date : Date
+        - message : String
+        - notificationId : int
+        + equals()
+        + getDate()
+        + getMessage()
+        + getNotificationId()
+        + getStatus()
+        + hashCode()
+        + setDate()
+        + setMessage()
+        + setNotificationId()
+        + setStatus()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.PrivilegetypeEntity {
+        - privilege : String
+        - privilegeId : int
+        + equals()
+        + getPrivilege()
+        + getPrivilegeId()
+        + hashCode()
+        + setPrivilege()
+        + setPrivilegeId()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.UsersEntity {
+        - password : String
+        - privilegeId : int
+        - userId : int
+        - username : String
+        - warehouseId : Integer
+        + Exist()
+        + equals()
+        + getPassword()
+        + getPrivilegeId()
+        + getUserId()
+        + getUsername()
+        + getWarehouseId()
+        + hashCode()
+        + setPassword()
+        + setPrivilegeId()
+        + setUserId()
+        + setUsername()
+        + setWarehouseId()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.WarehouseEntity {
+        - warehouseId : int
+        - warehouseLocation : String
+        - warehouseN : String
+        + equals()
+        + getWarehouseId()
+        + getWarehouseLocation()
+        + getWarehouseN()
+        + hashCode()
+        + setWarehouseId()
+        + setWarehouseLocation()
+        + setWarehouseN()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.WineEntity {
+        - madedate : Date
+        - serialnum : String
+        - size : Double
+        - warehouseId : Integer
+        - wineId : int
+        - winequantity : int
+        - winetypeId : int
+        + equals()
+        + getMadedate()
+        + getSerialnum()
+        + getSize()
+        + getWarehouseId()
+        + getWineId()
+        + getWinequantity()
+        + getWinetypeId()
+        + hashCode()
+        + setMadedate()
+        + setSerialnum()
+        + setSize()
+        + setWarehouseId()
+        + setWineId()
+        + setWinequantity()
+        + setWinetypeId()
+    }
+  }
+  
+
+  namespace tables {
+    class tables.WinetypeEntity {
+        - redGrapeNeeded : Double
+        - userId : Integer
+        - whiteGrapeNeeded : Double
+        - winename : String
+        - winetypeId : int
+        + equals()
+        + getRedGrapeNeeded()
+        + getUserId()
+        + getWhiteGrapeNeeded()
+        + getWinename()
+        + getWinetypeId()
+        + hashCode()
+        + setRedGrapeNeeded()
+        + setUserId()
+        + setWhiteGrapeNeeded()
+        + setWinename()
+        + setWinetypeId()
+    }
+  }
+  
+
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
