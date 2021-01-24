@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="218.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HostDelete">
+   <children>
+      <TextField fx:id="HostDelUsername" layoutX="96.0" layoutY="61.0" style="-fx-background-color: thransperant; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: SlateBLue;" />
+      <Button layoutX="138.0" layoutY="127.0" mnemonicParsing="false" onAction="#DeleteHostOnAction" style="-fx-background-color: SlateBlue; -fx-border-color: SlateBlue;" text="Delete" textFill="WHITE" />
+      <Label layoutX="36.0" layoutY="65.0" text="Username" />
+      <Label fx:id="DelLabel" layoutX="110.0" layoutY="101.0" text="Label" />
+   </children>
+</AnchorPane>

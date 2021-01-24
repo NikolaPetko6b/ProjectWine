@@ -1,0 +1,244 @@
+@startuml
+
+title __CONTROLLERS's Class Diagram__\n
+
+  namespace Controllers {
+    class Controllers.AdminController {
+        + UpdateLabel : Label
+        + winemakers : ListView
+        + BackOnAction()
+        + PopulateListView()
+        + RefreshListView()
+        + StockInfoOnAction()
+        + SwitchHostDel()
+        + SwitchHostReg()
+        + SwitchLog()
+        + SwitchWinemakerDel()
+        + SwitchWinemakerReg()
+        + editONAction()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.BottlesFillController {
+        + Count187 : Label
+        + Count200 : Label
+        + Count375 : Label
+        + Count750 : Label
+        + allLiters : double
+        + bottle1 : int
+        + bottle2 : int
+        + bottle3 : int
+        + bottle4 : int
+        + fill : Button
+        + liters : Label
+        + tempLiters : double
+        + AutoFillOnAction()
+        + FillOnAction()
+        + decrement187()
+        + decrement200()
+        + decrement375()
+        + decrement750()
+        + increment187()
+        + increment200()
+        + increment375()
+        + increment750()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.HostController {
+        + Ncounter : Label
+        + Nicon : Circle
+        + RedGrapeBox : CheckBox
+        + RedGrapeField : TextField
+        + RedGrapeQuantity : TextField
+        + WhiteGrapeBox : CheckBox
+        + WhiteGrapeField : TextField
+        + WhiteGrapeQuantity : TextField
+        + bottle1Box : CheckBox
+        + bottle1Field : TextField
+        + bottle1Quantity : TextField
+        + bottle2Box : CheckBox
+        + bottle2Field : TextField
+        + bottle2Quantity : TextField
+        + bottle3Box : CheckBox
+        + bottle3Field : TextField
+        + bottle3Quantity : TextField
+        + bottle4Box : CheckBox
+        + bottle4Field : TextField
+        + bottle4Quantity : TextField
+        + criticalWhiteGr : Label
+        {static} ~ logger : Logger
+        {static} - log : Logger
+        + BackOnAction()
+        + MakeRequestOnAction()
+        + NotificationsOnAction()
+        + SeeOnAction()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.HostDelete {
+        + DelLabel : Label
+        + HostDelUsername : TextField
+        {static} ~ logger : Logger
+        + DeleteHostOnAction()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.HostNotificationsController {
+        + Date : TableColumn
+        + Message : TableColumn
+        + NTable : TableView
+        + ClearRowsOnAction()
+        + DeleteRowOnAction()
+        + initialize()
+        + refreshTable()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.HostRegistration {
+        + HostRegLabel : Label
+        + NewHostPass : TextField
+        + NewHostUser : TextField
+        + AddHostOnAction()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.LogsController {
+        ~ ShowLogs : TextArea
+        + Switch()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.OrderHistory_Controller {
+        + fromDate : DatePicker
+        + orderhistory : ListView
+        + stockType : ChoiceBox
+        + toDate : DatePicker
+        + BackOnAction()
+        + SeeHistoryOnAction()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.SampleController {
+        + label : Label
+        {static} ~ logger : Logger
+        - passwordField : TextField
+        - rootPane : AnchorPane
+        - usernameField : TextField
+        + LoginValidation()
+        + Switch()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.WinemakerController {
+        + LitersYouCanMake : TextField
+        + RedGrapeYouNeed : TextField
+        + Warehouse187Bottles : TextField
+        + Warehouse200Bottles : TextField
+        + Warehouse375Bottles : TextField
+        + Warehouse750Bottles : TextField
+        + WarehouseRedGrape : TextField
+        + WarehouseWhiteGrape : TextField
+        + WhiteGrapeYouNeed : TextField
+        + calculateLabel : Label
+        + calculateLabel1 : Label
+        + datefrom : DatePicker
+        + dateto : DatePicker
+        + winehistory : ListView
+        {static} ~ logger : Logger
+        + BackOnAction()
+        + CalculateOnAction()
+        + MakeOnAction()
+        + RefreshWarehouseStock()
+        + SeeHistoryOnAction()
+        + SwitchBottlesFill()
+        + initialize()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.WinemakerRegistration {
+        + NewRegLabel : Label
+        + NewWinePass : TextField
+        + NewWineType : TextField
+        + NewWineUser : TextField
+        + RedGrNeeded : TextField
+        + WhiteGrNeeded : TextField
+        + button1 : Button
+        ~ loggedid : int
+        + AddWinemakerOnAction()
+        + getLoggedid()
+        + initialize()
+        + setLoggedid()
+    }
+  }
+  
+
+  namespace Controllers {
+    class Controllers.WinemakerUpdate {
+        + UpdatePass : TextField
+        + UpdateRedGrNeeded : TextField
+        + UpdateRegLabel : Label
+        + UpdateUser : TextField
+        + UpdateWhiteGrNeeded : TextField
+        + UpdateWineType : TextField
+        + updatewinemaker : Button
+        ~ updateUserid : int
+        + DeleteWinemakerOnAction()
+        + UpdateWinemakerOnAction()
+        + getUpdateid()
+        + initialize()
+        + setUpdateid()
+    }
+  }
+  
+
+  Controllers.AdminController .up.|> javafx.fxml.Initializable
+  Controllers.BottlesFillController .up.|> javafx.fxml.Initializable
+  Controllers.HostController .up.|> javafx.fxml.Initializable
+  Controllers.HostDelete .up.|> javafx.fxml.Initializable
+  Controllers.HostNotificationsController .up.|> javafx.fxml.Initializable
+  Controllers.HostRegistration .up.|> javafx.fxml.Initializable
+  Controllers.LogsController .up.|> javafx.fxml.Initializable
+  Controllers.OrderHistory_Controller .up.|> javafx.fxml.Initializable
+  Controllers.SampleController .up.|> javafx.fxml.Initializable
+  Controllers.WinemakerController .up.|> javafx.fxml.Initializable
+  Controllers.WinemakerRegistration .up.|> javafx.fxml.Initializable
+  Controllers.WinemakerUpdate .up.|> javafx.fxml.Initializable
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml
